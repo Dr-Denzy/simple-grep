@@ -2,7 +2,20 @@
 name = "simplegrep"
 version = "0.1.0"
 edition = "2021"
+authors = ["andexify@gmail.com"]
+license = "MIT OR Apache-2.0"
+description = "A simple grep tool"
+readme = "README.md"
+homepage = "https://github.com/Dr-Denzy/simple-grep"
+repository = "https://github.com/Dr-Denzy/simple-grep"
+keywords = ["cli", "grep", "demo", "example"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = {version = "4.5.7", features = ["derive", "color"]}
 anyhow = "1.0.86"
+
+[dev-dependencies]
+assert_cmd = "2.0.14"
+predicates = "3.1.0"
+assert_fs = "1.1.1"
